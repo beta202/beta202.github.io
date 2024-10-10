@@ -1,1 +1,200 @@
-
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Post-Traumatic Stress Disorder and Support for Veterans</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <style>
+         @keyframes flowDown {
+         	0% {
+         		opacity: 0;
+         		filter: blur(20px);
+         		transform: translateY(-50px);
+         	}
+         	100% {
+         		opacity: 1;
+         		filter: blur(0px);
+         		transform: translateY(0px);
+         	}
+         }
+         
+         body {
+         	font-family: Poppins;
+         }
+         
+         h1 {
+         	font-size: 45px;
+         	font-weight: 500;
+         	opacity: 0;
+         	color: #21292b;
+         	animation: flowDown 1s forwards;
+         	animation-delay: 0.3s;
+         }
+         
+         h2 {
+         	font-size: 24px;
+         	font-weight: 500;
+         	color: rgba(0, 0, 0, 0.8);
+         	opacity: 0;
+         	animation: flowDown 1s forwards;
+         	animation-delay: 0.5s;
+         }
+         
+         h3 {
+         	font-size: 25px;
+         	font-weight: 500;
+         	color: rgba(0, 0, 0, 0.5);
+         	animation: flowDown 1s forwards;
+         }
+         p {
+         	line-height: 2;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 20px;
+         }
+         
+         h4 {
+           font-size: 30px;
+           font-weight: 500;
+         }
+         
+         b {
+         	font-weight: 500;
+         }
+         
+         .content {
+         	padding: 50px;
+         	margin-top: 10%;
+         	max-width: 800px;
+         }
+         
+         .infoBox {
+         	margin-top: 20px;
+         	padding-top: 20px;
+         	padding-right: 30px;
+         	padding-left: 30px;
+         	padding-bottom: 20px;
+         	border-radius: 50px;
+         	background: rgba(0, 0, 0, 0.05);
+         	color: rgba(0, 0, 0, 0.6);
+         	font-weight: 400;
+         	transition: 0.3s;
+         	opacity: 0;
+         	animation: flowDown 1s forwards;
+         	animation-delay: 0.6s;
+         }
+         
+         .innerPoint {
+         	margin-top: 15%;
+         }
+         .item1 { grid-area: header; }
+         .item2 { grid-area: menu; }
+         .item3 { grid-area: main; }
+         .item4 { grid-area: right; }
+         .item5 { grid-area: footer; }
+         .grid-container {
+         display: grid;
+         grid-template-areas:
+         'header header header header header header'
+         'menu   main   main   main   right  right'
+         'menu   footer footer footer footer footer';
+         gap: 10px;
+         padding: 18px;
+         }
+         .grid-container > div {
+         background-color: rgba(0, 0, 0, 0.05);
+         padding-left: 40px;
+         padding-right: 40px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         border-radius: 40px;
+         text-align: center;
+         font-size: 30px;
+         transition: 0.5s;
+      }
+      
+      	.grid-container > div:hover {
+        	background: rgba(0, 0, 0, 0.1);
+        	transform: scale(0.95);
+            transition: 0.5s;
+       }
+       
+       .grid-container > div:active {
+       		background: rgba(0, 0, 0, 0.15);
+            transform: scale(0.8);
+            transition: 0.5s;
+       }
+       
+       button {
+       	  border-radius: 30px;
+         	background: #21292b;
+            font-size: 16px;
+         	animation: flowDown 1s forwards;
+            padding: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-family: Poppins;
+            border: none;
+       }
+      </style>
+      <center>
+         <div class="content">
+            <h3>PTSD</h3>
+            <h1>Support for Veterans.</h1>
+            <div class="innerPoint">
+               <h2>First: Why is this important to address?</h2>
+               <div class="infoBox">
+                  <p>Post Traumatic Stress Disorder or PTSD is a mental disorder that affects a great number of individuals around the U.S. In fact, as many as <b>35,574</b> people in 2024 were considered homeless as a result of this unaddressed mental issue that is a result of damaging war experiences. Because many of them are senior citizens, providing them with adequate resources and shelter is morally crucial.</p>
+               </div>
+            </div>
+            
+            <div class="innerPoint">
+               <h2 style="font-size: 30px">The Obstacles</h2>
+               <p></p>
+               <div class="infoBox">
+                  <p><b>💰 Funding:</b> Paying for treatment, supplies, and  for veterans can be an incredibly costly process.</p>
+                  <p>❓ Misunderstanding: PTSD is not as addressed as other mental disorders. It can be comprehend for many people as there are many different reactions that play a role.</p>
+                  <p></p>
+               </div>
+            </div>
+            
+            <div class="innerPoint">
+               <h2 style="margin-top: 90px">The Statistics</h2>
+               <div class="grid-container">
+                  <div class="item1">
+	                  <h4 style="font-size: 45px">35,574</h4>
+	                  <p>People experienced homelessness in 2024</p>
+                  </div>
+                  <div class="item2"><h4>11%</h4><p>of the United States homeless population are veterans.</div>
+                  <div class="item3"><h4>22 out of every 10,000 veterans</h4><p>Experienced homelessnes</p></div>
+                  <div class="item4"><p>Veterans have a harder time returning to civilian life as a result of flashbacks or other stimuli, making it harder to retain a job.</p></div>
+                  <div class="item5"><p>The US Department of Veteran Affairs, those who are homeless veterans are more likely to suffer from opioid addiction</p></div>
+               </div>
+            </div>
+            <div class="innerPoint">
+               <h2 style="font-size: 40px">What can you do?</h2>
+               <div>
+                  <p>There are many ways you can support our homeless veterans. One of the easiest way is to donate personal items such as clothing, food, or make cash contributions.</p>
+               </div>
+            </div>
+            
+            <div class="innerPoint">
+               <h2 style="font-size: 30px">Citations & Sources</h2>
+               <p></p>
+               <div style="text-align: left" class="infoBox">
+                  <p style="font-size: 12px">“Veterans.” National Alliance to End Homelessness, https://endhomelessness.org/homelessness-in-america/who-experiences-homelessness/veterans/. Accessed 7 October 2024.
+</p>
+<p style="font-size: 12px">“Homelessness.” VA's Office of Research and Development, https://www.research.va.gov/topics/homelessness.cfm. Accessed 7 October 2024.
+</p>
+                  <p style="font-size: 12px">McElhinny, Greg. “Veterans and PTSD.” NVHS, 9 Dec. 2021, nvhs.org/veterans-and-ptsd/.
+</p>
+<p style="font-size: 12px">“Fact Sheet: 2023 Annual Homelessness Assessment Report Key Findings from the Point-in-Time Counts.” HUD, 1 December 2023, https://www.hud.gov/sites/dfiles/PA/documents/Fact_Sheet_Summarized_Findings.pdf. Accessed 10 October 2024.
+</p>
+<p style="font-size: 12px">“Fact Sheet: 2023 Annual Homelessness Assessment Report Key Findings from the Point-in-Time Counts.” HUD, 1 December 2023, https://www.hud.gov/sites/dfiles/PA/documents/Fact_Sheet_Summarized_Findings.pdf. Accessed 10 October 2024.
+</p>
+               </div>
+            </div>
+         </div>
+      </center>
+   </body>
+</html>
