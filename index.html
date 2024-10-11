@@ -85,7 +85,7 @@
          }
          
          .innerPoint {
-         	margin-top: 15%;
+         	margin-top: 28%;
          }
          .item1 { grid-area: header; }
          .item2 { grid-area: menu; }
@@ -127,14 +127,36 @@
        
        button {
        	  border-radius: 30px;
-         	background: #21292b;
+         	background: rgba(33, 41, 43, 1);
             font-size: 16px;
          	animation: flowDown 1s forwards;
             padding: 15px;
-            padding-left: 30px;
-            padding-right: 30px;
+            color: white;
+            font-weight: 500;
+            padding-left: 40px;
+            padding-right: 40px;
             font-family: Poppins;
+            margin: 5px;
             border: none;
+       		transition: 0.5s;
+       }
+       
+       button:hover {
+       		transition: 0.5s;
+            cursor: pointer;
+         	background: rgba(33, 41, 43, 0.6);
+       }
+       
+       img {
+         border-radius: 40px;
+         margin-top: 40px;
+         width: 100%;
+         transition: 0.5s;
+       }
+       
+       img:hover {
+         opacity: 0.6;
+         transition: 0.5s;
        }
       </style>
       <center>
@@ -149,6 +171,7 @@
             </div>
             
             <div class="innerPoint">
+               <h2 style="font-size: 50px">🪨</h2>
                <h2 style="font-size: 30px">The Obstacles</h2>
                <p></p>
                <div class="infoBox">
@@ -159,7 +182,8 @@
             </div>
             
             <div class="innerPoint">
-               <h2 style="margin-top: 90px">The Statistics</h2>
+               <h2 style="margin-top: 90px; font-size: 50px">📈</h2>
+               <h2>The Statistics</h2>
                <div class="grid-container">
                   <div class="item1">
 	                  <h4 style="font-size: 45px">35,574</h4>
@@ -168,13 +192,25 @@
                   <div class="item2"><h4>11%</h4><p>of the United States homeless population are veterans.</div>
                   <div class="item3"><h4>22 out of every 10,000 veterans</h4><p>Experienced homelessnes</p></div>
                   <div class="item4"><p>Veterans have a harder time returning to civilian life as a result of flashbacks or other stimuli, making it harder to retain a job.</p></div>
-                  <div class="item5"><p>The US Department of Veteran Affairs, those who are homeless veterans are more likely to suffer from opioid addiction</p></div>
+                  <div class="item5"><p>The US Department of Veteran Affairs, those who are homeless veterans are more likely to suffer from opioid addiction.</p></div>
                </div>
             </div>
             <div class="innerPoint">
+               
+               <h2 style="margin-top: 90px; font-size: 50px">💡</h2>
                <h2 style="font-size: 40px">What can you do?</h2>
                <div>
-                  <p>There are many ways you can support our homeless veterans. One of the easiest way is to donate personal items such as clothing, food, or make cash contributions.</p>
+                  <p>There are many ways you can support our homeless veterans. One of the easiest way is to donate personal items such as clothing, food, or make cash contributions. Volunteering at local shelters and organizations that support veterans can also be another great way to support those in need.</p>
+                  <img src="https://westminstergr.org/wp-content/uploads/2021/11/food-donation-scaled-1.jpeg">
+               </div>
+            </div>
+            
+            <div style="margin-top: 250px" class="innerPoint">
+               <h2 style="font-size: 40px">How can I learn more?</h2>
+               <p>Check out some additional resources to learn more about the ongoing problem!</p>
+               <div>
+                  <button onclick="window.open('https://housingmatterssc.org/wp-content/uploads/2018/11/PTSD-and-Homelessness.pdf')">National Alliance to End Homelessness</button>
+                  <button onclick="window.open('https://greendoors.org/facts/veteran-homelessness.php')">Greendoors.org</button>
                </div>
             </div>
             
